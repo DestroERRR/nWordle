@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Wordle
+comment1.params=myWord
+comment1.target=Wordle(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getWord()
+comment3.params=guessedWord
+comment3.target=void\ userInput(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ userGuess()
+comment5.params=special
+comment5.target=boolean\ specialChar(java.lang.String)
+numComments=6
