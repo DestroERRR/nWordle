@@ -15,7 +15,7 @@ public class WordleDriver{
         String guess;
 
         System.out.println("WORDLE!\n\nHow to play:");
-        System.out.println("A random six letter word has been picked.");
+        System.out.println("A random five letter word has been picked.");
         System.out.println("You have six attempts to guess it.\nI will give you hints about how the letters in your guess match\nTHE SECRET WORD\n");
         System.out.println("The Hints:");
         System.out.println("! means this letter is the right letter in the right place.\n? means this letter is the right letter in the wrong place.\n# means this letter does not appear in the secret word at all.\n");
