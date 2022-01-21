@@ -18,7 +18,7 @@ public class Wordle{
     public String getWord(){
         return theWord;
     }
-
+       
     public void userInput(String guessedWord){
         input.clear();
         guessedWord = guessedWord.toUpperCase();
@@ -81,7 +81,7 @@ public class Wordle{
             System.out.println(e);   
         }
     }
-
+    
     public String randomWord(){
         String ra = "";
         int r = (int) (Math.random()*theWords.size());
@@ -89,13 +89,15 @@ public class Wordle{
         return ra;
     }
 
-    public boolean specialChar(String special){
-        for (int i = 0; i < special.length(); i++) {
-            if (special.charAt(i) < 'a' || special.charAt(i) > 'z') {
+    
+    public boolean trueWord(String guess){
+        if(guess.length() != 5) return false; 
+        for(int i = 0; i < theWords.size(); i++){
+            if(guess.equals(theWords.get(i))){
                 return true;
             }
         }
         return false;
     }
-
+    
 }
