@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Wordle
-comment1.params=myWord
-comment1.target=Wordle(java.lang.String)
+comment1.params=
+comment1.target=Wordle()
 comment2.params=
 comment2.target=java.lang.String\ getWord()
 comment3.params=guessedWord
@@ -10,6 +10,8 @@ comment4.params=
 comment4.target=java.lang.String\ userGuess()
 comment5.params=filename
 comment5.target=void\ loadWords(java.lang.String)
-comment6.params=special
-comment6.target=boolean\ specialChar(java.lang.String)
-numComments=7
+comment6.params=
+comment6.target=java.lang.String\ randomWord()
+comment7.params=special
+comment7.target=boolean\ specialChar(java.lang.String)
+numComments=8

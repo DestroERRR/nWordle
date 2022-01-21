@@ -8,13 +8,11 @@ public class Wordle{
     ArrayList<String> input = new ArrayList<String>();
     ArrayList<String> theWords = new ArrayList<String>();
 
-    public Wordle(String myWord){
+    public Wordle(){
         theWords = new ArrayList<String>(3300);
         loadWords("words.txt");
-        int r = (int) (Math.random()*theWords.size());
-        theWord = theWords.get(r);
-        theWord = myWord;
-        theWord.toUpperCase();
+        theWord = randomWord();
+        theWord = theWord.toUpperCase();
     }
 
     public String getWord(){
@@ -82,6 +80,13 @@ public class Wordle{
         } catch(FileNotFoundException e){
             System.out.println(e);   
         }
+    }
+
+    public String randomWord(){
+        String ra = "";
+        int r = (int) (Math.random()*theWords.size());
+        ra = theWords.get(r);
+        return ra;
     }
 
     public boolean specialChar(String special){

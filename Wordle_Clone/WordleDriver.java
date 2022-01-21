@@ -11,7 +11,7 @@ public class WordleDriver{
     public static void main(String[] args){
 
         Scanner sc = new Scanner(System.in);
-        Wordle wordle = new Wordle("SHANK");
+        Wordle wordle = new Wordle();
         String guess;
 
         System.out.println("WORDLE!\n\nHow to play:");
