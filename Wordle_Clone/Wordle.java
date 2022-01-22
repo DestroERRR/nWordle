@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class Wordle{
     private String theWord;
     ArrayList<String> input = new ArrayList<String>();
-    ArrayList<String> theWords = new ArrayList<String>();
+    ArrayList<String> moreWords = new ArrayList<String>();
 
     public Wordle(){
-        theWords = new ArrayList<String>(3300);
+        moreWords = new ArrayList<String>(3300);
         loadWords("words.txt");
         theWord = randomWord();
         theWord = theWord.toUpperCase();
@@ -73,7 +73,7 @@ public class Wordle{
             while(fileScanner.hasNext()){
                 String w = fileScanner.nextLine();
                 if(w.length() == 5 && !Character.isUpperCase(w.charAt(0))){
-                    theWords.add(w);
+                    moreWords.add(w);
                 }
             }
 
@@ -82,18 +82,17 @@ public class Wordle{
         }
     }
     
-    public String randomWord(){
+    public String randomWord(){ //picks random word from words.txt file
         String ra = "";
-        int r = (int) (Math.random()*theWords.size());
-        ra = theWords.get(r);
+        int r = (int) (Math.random()*moreWords.size());
+        ra = moreWords.get(r);
         return ra;
     }
 
-    
     public boolean trueWord(String guess){
         if(guess.length() != 5) return false; 
-        for(int i = 0; i < theWords.size(); i++){
-            if(guess.equals(theWords.get(i))){
+        for(int i = 0; i < moreWords.size(); i++){
+            if(guess.equals(moreWords.get(i))){
                 return true;
             }
         }
