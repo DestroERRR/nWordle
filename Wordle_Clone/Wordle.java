@@ -76,10 +76,11 @@ public class Wordle{
                     moreWords.add(w);
                 }
             }
-
+             
         } catch(FileNotFoundException e){
             System.out.println(e);   
         }
+        //need to write code so the word cannot be repeated letter word 
     }
     
     public String randomWord(){ //picks random word from words.txt file

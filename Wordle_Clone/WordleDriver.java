@@ -18,6 +18,7 @@ public class WordleDriver{
         System.out.println("You have six attempts to guess it.\nI will give you hints about how the letters in your guess match\nTHE SECRET WORD\n");
         System.out.println("The Hints:");
         System.out.println("! means this letter is the right letter in the right place.\n? means this letter is the right letter in the wrong place.\n# means this letter does not appear in the secret word at all.\n");
+        System.out.println("No word has a duplicate letter;\nFor example, the word \"babes\" does not exist because the letter b is repeated twice");
 
         while(attempts < 7 && !winCon){
             System.out.println();
